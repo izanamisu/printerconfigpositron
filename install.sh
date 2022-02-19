@@ -38,5 +38,10 @@ echo 'dtoverlay=pi3-miniuart-bt' >> /boot/config.txt
 echo 'dtoverlay=disable-bt' >> /boot/config.txt
 echo 'enable_uart=1' >> /boot/config.txt
 echo 'dtoverlay=pwm,pin=12,func=4' >> /boot/config.txt
+echo ' ' >> /etc/dhcpcd.conf
+echo 'interface wlan0' >> /etc/dhcpcd.conf
+echo 'static ip_address=192.168.192.53/24' >> /etc/dhcpcd.conf
+echo 'static routers=192.168.192.1' >> /etc/dhcpcd.conf
+echo 'static domain_name_servers=192.168.192.1' >> /etc/dhcpcd.conf
 exit
 make clean
