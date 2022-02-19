@@ -1,3 +1,6 @@
+sudo cp /home/pi/printerconfigpositron/backupscript.sh /usr/bin/
+sudo chmod +x ./usr/bin/backupscript.sh
+sudo ./usr/bin/backupscript.sh
 #sudo apt-get update
 #sudo apt-get upgrade -y 
 #sudo apt-get dist-upgrade -y
