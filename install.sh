@@ -1,6 +1,10 @@
 sudo cp /home/pi/printerconfigpositron/backupscript.sh /usr/bin/
+sudo cp /home/pi/printerconfigpositron/backupscript-before.sh /usr/bin/
+sudo cp /home/pi/printerconfigpositron/backupscript-after.sh /usr/bin/
 sudo chmod +x ./usr/bin/backupscript.sh
-sudo ./usr/bin/backupscript.sh
+sudo chmod +x ./usr/bin/backupscript-before.sh
+sudo chmod +x ./usr/bin/backupscript-after.sh
+sudo ./usr/bin/backupscript-before.sh
 #sudo apt-get update
 #sudo apt-get upgrade -y 
 #sudo apt-get dist-upgrade -y
@@ -37,6 +41,6 @@ echo 'static ip_address=192.168.192.53/24' >> /etc/dhcpcd.conf
 echo 'static routers=192.168.192.1' >> /etc/dhcpcd.conf
 echo 'static domain_name_servers=192.168.192.1' >> /etc/dhcpcd.conf
 exit
-sudo make clean
+sudo ./usr/bin/backupscript-after.sh
 exit
 sudo reboot now
