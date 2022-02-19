@@ -1,4 +1,4 @@
-#Making backup before setup
+#Making backup after setup
 sudo rsync -avzh /home/pi/klipper /tmp/backups/after
 sudo rsync -avzh /home/pi/klipper_config /tmp/backups/after
 sudo rsync -avzh /home/pi/klipper_logs /tmp/backups/after
