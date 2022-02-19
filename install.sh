@@ -4,6 +4,10 @@ sudo cp /home/pi/printerconfigpositron/backupscript-after.sh /usr/bin/
 sudo chmod +x /usr/bin/backupscript.sh
 sudo chmod +x /usr/bin/backupscript-before.sh
 sudo chmod +x /usr/bin/backupscript-after.sh
+sudo mkdir backups
+sudo mkdir backups/after
+sudo mkdir backups/before
+sudo sh /usr/bin/backupscript.sh
 sudo sh /usr/bin/backupscript-before.sh
 #sudo apt-get update
 #sudo apt-get upgrade -y 
