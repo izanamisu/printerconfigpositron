@@ -1,3 +1,5 @@
+cd /home/pi/
+git clone https://github.com/izanamisu/printerconfigpositron.git
 sudo apt-get update
 #sudo apt-get upgrade -y 
 #sudo apt-get dist-upgrade -y
@@ -27,8 +29,6 @@ sudo python neopixelring.py
 sudo python /home/pi/klipper_config/ws2812-controll.py
 sudo python /home/pi/ws2812-controll.py
 sudo apt autoremove
-cd /home/pi/
-git clone https://github.com/izanamisu/printerconfigpositron.git
 cd /home/pi/printerconfigpositron/positron-dev-klipper-configfiles/
 sudo cp /home/pi/printerconfigpositron/positron-dev-klipper-configfiles/*  /home/pi/klipper_config/
 sudo su
