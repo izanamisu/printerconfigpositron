@@ -37,4 +37,6 @@ echo 'static ip_address=192.168.192.53/24' >> /etc/dhcpcd.conf
 echo 'static routers=192.168.192.1' >> /etc/dhcpcd.conf
 echo 'static domain_name_servers=192.168.192.1' >> /etc/dhcpcd.conf
 exit
-make clean
+sudo make clean
+exit
+sudo reboot now
