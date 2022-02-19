@@ -1,9 +1,7 @@
-cd /home/pi/
-git clone https://github.com/izanamisu/printerconfigpositron.git
 #sudo apt-get update
 #sudo apt-get upgrade -y 
 #sudo apt-get dist-upgrade -y
-sudo apt-get install git -y
+#sudo apt-get install git -y
 sudo apt-get install mc -y
 cd ~/klipper/
 sudo cp "./scripts/klipper-mcu-start.sh" /etc/init.d/klipper_mcu
