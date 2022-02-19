@@ -1,6 +1,6 @@
 cd /home/pi/
 git clone https://github.com/izanamisu/printerconfigpositron.git
-sudo apt-get update
+#sudo apt-get update
 #sudo apt-get upgrade -y 
 #sudo apt-get dist-upgrade -y
 sudo apt-get install git -y
@@ -12,16 +12,15 @@ sudo usermod -a -G tty pi
 sudo apt-get install gpiod
 sudo systemctl disable hciuart.service
 sudo systemctl disable bluetooth.service
-fuser /dev/ttyAMA0
+#fuser /dev/ttyAMA0
 sudo apt-get install -y python-smbus
 sudo apt-get install -y i2c-tools
-git clone https://github.com/buyapi/ups.git
-cd ups
-cd scripts
-sudo cp ups.sh /usr/bin/
-sudo chmod +x /usr/bin/ups.sh
-sudo usermod -a -G tty pi
-sudo apt autoremove
+#git clone https://github.com/buyapi/ups.git
+#cd ups
+#cd scripts
+#sudo cp ups.sh /usr/bin/
+#sudo chmod +x /usr/bin/ups.sh
+#sudo apt autoremove
 cd /home/pi/printerconfigpositron/positron-dev-klipper-configfiles/
 sudo cp /home/pi/printerconfigpositron/positron-dev-klipper-configfiles/*  /home/pi/klipper_config/
 sudo su
