@@ -21,13 +21,6 @@ cd scripts
 sudo cp ups.sh /usr/bin/
 sudo chmod +x /usr/bin/ups.sh
 sudo usermod -a -G tty pi
-git clone https://github.com/julianschill/klipper-led_effect.git
-cd klipper-led_effect
-./install-led_effect.sh
-cd rpi_ws281x/
-sudo python neopixelring.py
-sudo python /home/pi/klipper_config/ws2812-controll.py
-sudo python /home/pi/ws2812-controll.py
 sudo apt autoremove
 cd /home/pi/printerconfigpositron/positron-dev-klipper-configfiles/
 sudo cp /home/pi/printerconfigpositron/positron-dev-klipper-configfiles/*  /home/pi/klipper_config/
