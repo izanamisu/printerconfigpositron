@@ -1,3 +1,4 @@
+sudo rsync -aAXv / --exclude={"/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} /mnt/usb/positron-system-bck/
 
 sudo rsync -avzh /home/pi/klipper /tmp/backups/
 sudo rsync -avzh /home/pi/klipper_config /tmp/backups/
