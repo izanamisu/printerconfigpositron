@@ -10,6 +10,7 @@ sudo mkdir /tmp/backups/before
 sudo sh /usr/bin/backupscript.sh
 sudo sh /usr/bin/backupscript-before.sh
 sudo apt-get install mc -y
+sudo apt-get install htop -y
 cd ~/klipper/
 sudo cp "./scripts/klipper-mcu-start.sh" /etc/init.d/klipper_mcu
 sudo update-rc.d klipper_mcu defaults
